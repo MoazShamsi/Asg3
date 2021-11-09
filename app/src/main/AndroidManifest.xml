@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Asg3">
         <activity
+            android:name=".quiz"
+            android:exported="true" />
+        <activity
             android:name=".learnActivity"
             android:exported="true" />
         <activity
