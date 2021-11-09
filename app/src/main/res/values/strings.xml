@@ -11,4 +11,9 @@
     <string name="nit">NIT-EEYAH</string>
     <string name="lesaveyah">LESAVEYAH</string>
     <string name="ghunna">GHUNNA</string>
+    <string name="opt1" />
+    <string name="opt2" />
+    <string name="opt3" />
+    <string name="opt4" />
+    <string name="ques" />
 </resources>

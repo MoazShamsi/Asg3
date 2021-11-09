@@ -7,8 +7,9 @@
     tools:context=".quiz">
 
     <RadioGroup
-        android:layout_width="381dp"
-        android:layout_height="450dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="395dp"
+        android:layout_height="459dp"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="93dp"
@@ -17,10 +18,39 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/opt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButtonaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+            android:text="@string/opt1" />
 
+        <RadioButton
+            android:id="@+id/opt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opt2" />
+
+        <RadioButton
+            android:id="@+id/opt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opt3" />
+
+        <RadioButton
+            android:id="@+id/opt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opt4" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="386dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/ques"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
