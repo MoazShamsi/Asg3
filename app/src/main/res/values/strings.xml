@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Asg3</string>
+    <string name="nameTv">MOAZ BIN MATEEN</string>
+    <string name="rollno">BCSF18M020</string>
+    <string name="learn">learn</string>
+    <string name="take_quiz">Take Quiz</string>
+    <string name="button">HALQIYAH</string>
+    <string name="lahatiyah">LAHATIYAH</string>
+    <string name="shajariya">SHAJARIYA-HAFIYA</string>
+    <string name="tarfiya">TARFIYAH</string>
+    <string name="nit">NIT-EEYAH</string>
+    <string name="lesaveyah">LESAVEYAH</string>
+    <string name="ghunna">GHUNNA</string>
+</resources>
