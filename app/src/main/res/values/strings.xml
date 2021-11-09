@@ -16,4 +16,5 @@
     <string name="opt3" />
     <string name="opt4" />
     <string name="ques" />
+    <string name="submit">SUBMIT ANSWER</string>
 </resources>
