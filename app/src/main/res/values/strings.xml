@@ -21,4 +21,11 @@
     <string name="textview"><![CDATA[There are 17 emission points (makhārij al-ḥurūf), located in various regions of: 1 – Throat 2 – Tongue 3 – Lips 4 – Nose 5 – Mouth]]></string>
     <string name="next">Next</string>
     <string name="anstv" />
+    <string name="rslt">RESULTS</string>
+    <string name="total">Total Questions</string>
+    <string name="correct">Correct Answers</string>
+    <string name="wrong">Wrong Answers</string>
+    <string name="mark">Marks</string>
+    <string name="perc">Percentage</string>
+    <string name="rsltbtn">SHARE RESULTS</string>
 </resources>

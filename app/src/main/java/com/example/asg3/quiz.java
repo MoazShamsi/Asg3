@@ -2,6 +2,7 @@ package com.example.asg3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +17,8 @@ public class quiz extends AppCompatActivity {
 
     boolean clicked=false;
     int i=0;
+    int correctAns=0;
+    int totalQues=5;
     List<String> ques=new ArrayList<String>();
     List<String> opt=new ArrayList<String>();
     List<String> answers=new ArrayList<String>();
@@ -91,7 +94,10 @@ public class quiz extends AppCompatActivity {
                     display.setText("");}
                     else
                     {
-
+                        Intent intent=new Intent(quiz.this,result.class);
+                        intent.putExtra("totalQ",totalQues);
+                        intent.putExtra("correct",correctAns);
+                        startActivity(intent);
                     }
 
                 }
@@ -109,6 +115,7 @@ public class quiz extends AppCompatActivity {
                 String check1=answers.get(i).toString();
                 if(check==check1){
                     display.setText("TRUE ANSWER");
+                    correctAns++;
                 }
                 else
                 {
