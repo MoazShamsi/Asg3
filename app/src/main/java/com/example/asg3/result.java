@@ -27,7 +27,7 @@ public class result extends AppCompatActivity {
         wa.setText(String.valueOf(w));
         String m=String.valueOf(t)+"/"+String.valueOf(c);
         marks.setText(m);
-        double per=c/t;
+        double per=((double) c/(double) t);
         per=per*100;
         percentage.setText(String.valueOf(per));
 
