@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,6 +16,8 @@
         android:layout_marginEnd="42dp"
         android:text="@string/nameTv"
         android:textSize="30dp"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +29,8 @@
         android:layout_height="38dp"
         android:layout_marginTop="8dp"
         android:text="@string/rollno"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="@+id/nameTv"
         app:layout_constraintTop_toBottomOf="@+id/nameTv" />
@@ -49,6 +54,7 @@
         android:text="@string/learn"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/maroon"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -58,6 +64,7 @@
         android:layout_marginEnd="28dp"
         android:text="@string/take_quiz"
         android:textSize="25dp"
+        android:backgroundTint="@color/maroon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -70,6 +77,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/git"
         android:textSize="20dp"
+        android:backgroundTint="@color/maroon"
         app:layout_constraintBottom_toTopOf="@+id/learnBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
