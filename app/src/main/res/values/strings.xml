@@ -28,4 +28,9 @@
     <string name="mark">Marks</string>
     <string name="perc">Percentage</string>
     <string name="rsltbtn">SHARE RESULTS</string>
+    <string name="tq" />
+    <string name="ca" />
+    <string name="wa" />
+    <string name="m" />
+    <string name="p" />
 </resources>

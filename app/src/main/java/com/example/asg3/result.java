@@ -18,16 +18,17 @@ public class result extends AppCompatActivity {
         marks=(TextView)findViewById(R.id.marks);
         percentage=(TextView)findViewById(R.id.perc);
         Bundle bundle=getIntent().getExtras();
-        int total=bundle.getInt("totalQues");
-        int correct=bundle.getInt("correctAns");
-        int wrong=total-correct;
+        int t=bundle.getInt("totalQ");
+        int c=bundle.getInt("correct");
+        int w=t-c;
 
-        tq.setText(String.valueOf(total));
-        ca.setText(String.valueOf(correct));
-        wa.setText(String.valueOf(wrong));
-        String m=String.valueOf(total)+"/"+String.valueOf(correct);
+        tq.setText(String.valueOf(t));
+        ca.setText(String.valueOf(c));
+        wa.setText(String.valueOf(w));
+        String m=String.valueOf(t)+"/"+String.valueOf(c);
         marks.setText(m);
-        int per=(correct/total)*100;
+        double per=c/t;
+        per=per*100;
         percentage.setText(String.valueOf(per));
 
     }
