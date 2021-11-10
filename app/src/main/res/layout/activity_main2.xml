@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity2">
 
     <Button
@@ -13,6 +14,7 @@
         android:layout_marginStart="4dp"
         android:text="@string/button"
         android:textSize="30dp"
+        android:backgroundTint="@color/maroon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
@@ -22,6 +24,7 @@
         android:layout_height="66dp"
         android:layout_marginStart="4dp"
         android:text="@string/lahatiyah"
+        android:backgroundTint="@color/maroon"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
@@ -32,6 +35,7 @@
         android:layout_height="66dp"
         android:layout_marginStart="4dp"
         android:text="@string/shajariya"
+        android:backgroundTint="@color/maroon"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
@@ -43,6 +47,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:text="@string/tarfiya"
+        android:backgroundTint="@color/maroon"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
@@ -53,6 +58,7 @@
         android:layout_height="66dp"
         android:layout_marginStart="4dp"
         android:text="@string/nit"
+        android:backgroundTint="@color/maroon"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
@@ -63,6 +69,7 @@
         android:layout_height="66dp"
         android:layout_marginStart="4dp"
         android:text="@string/lesaveyah"
+        android:backgroundTint="@color/maroon"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -72,9 +79,24 @@
         android:layout_width="337dp"
         android:layout_height="66dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="236dp"
+        android:backgroundTint="@color/maroon"
         android:text="@string/ghunna"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explain"
+        android:layout_width="406dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/textview"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="@color/maroon"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

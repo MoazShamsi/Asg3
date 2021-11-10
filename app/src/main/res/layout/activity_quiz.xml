@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".quiz">
 
     <RadioGroup
@@ -22,6 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:background="@color/maroon"
+            android:textColor="@color/white"
             android:text="@string/opt1" />
 
         <RadioButton
@@ -29,6 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:background="@color/maroon"
+            android:textColor="@color/white"
             android:text="@string/opt2" />
 
         <RadioButton
@@ -36,6 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:background="@color/maroon"
+            android:textColor="@color/white"
             android:text="@string/opt3" />
 
 
@@ -44,6 +51,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:background="@color/maroon"
+            android:textColor="@color/white"
             android:text="@string/opt4" />
     </RadioGroup>
 
@@ -55,6 +64,8 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="13dp"
         android:text="@string/ques"
+        android:textColor="@color/white"
+        android:background="@color/maroon"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"

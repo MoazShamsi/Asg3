@@ -70,8 +70,11 @@ public class quiz extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                unknown(i);
-                i++;
+                if(i<5)
+                {
+                    unknown(i);
+                    i++;
+                }
             }
 
         });
