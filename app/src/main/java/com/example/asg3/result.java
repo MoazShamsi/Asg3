@@ -22,11 +22,13 @@ public class result extends AppCompatActivity {
         int correct=bundle.getInt("correctAns");
         int wrong=total-correct;
 
-        tq.setText(tq.getText().toString());
-        ca.setText(ca.getText().toString());
+        tq.setText(String.valueOf(total));
+        ca.setText(String.valueOf(correct));
         wa.setText(String.valueOf(wrong));
-        String m=tq.getText().toString()+"/"+ca.getText().toString();
+        String m=String.valueOf(total)+"/"+String.valueOf(correct);
         marks.setText(m);
+        int per=(correct/total)*100;
+        percentage.setText(String.valueOf(per));
 
     }
 }
