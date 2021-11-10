@@ -19,4 +19,6 @@
     <string name="submit">SUBMIT ANSWER</string>
     <string name="git">GIT LINK</string>
     <string name="textview"><![CDATA[There are 17 emission points (makhārij al-ḥurūf), located in various regions of: 1 – Throat 2 – Tongue 3 – Lips 4 – Nose 5 – Mouth]]></string>
+    <string name="next">Next</string>
+    <string name="anstv" />
 </resources>
