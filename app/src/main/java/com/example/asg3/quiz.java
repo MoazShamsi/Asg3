@@ -119,7 +119,9 @@ public class quiz extends AppCompatActivity {
                 }
                 else
                 {
-                    display.setText("WRONG ANSWER");
+                    String x="Wrong Answer:Correct= ";
+                    x=x+answers.get(i);
+                    display.setText(x);
                 }
             }
 

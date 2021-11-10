@@ -2,6 +2,7 @@ package com.example.asg3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +30,7 @@ public class result extends AppCompatActivity {
         tq.setText(String.valueOf(t));
         ca.setText(String.valueOf(c));
         wa.setText(String.valueOf(w));
-        String m=String.valueOf(t)+"/"+String.valueOf(c);
+        String m=String.valueOf(c)+"/"+String.valueOf(t);
         marks.setText(m);
         double per=((double) c/(double) t);
         per=per*100;
@@ -38,7 +39,13 @@ public class result extends AppCompatActivity {
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my result.");
+                sendIntent.setType("text/plain");
+
+                Intent shareIntent = Intent.createChooser(sendIntent, null);
+                startActivity(shareIntent);
             }
         });
 

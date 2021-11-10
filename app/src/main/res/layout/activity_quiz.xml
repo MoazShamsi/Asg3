@@ -101,6 +101,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginBottom="13dp"
         android:text="@string/anstv"
+        android:textSize="20dp"
         android:textColor="@color/maroon"
         app:layout_constraintBottom_toTopOf="@+id/next"
         app:layout_constraintStart_toStartOf="parent" />
