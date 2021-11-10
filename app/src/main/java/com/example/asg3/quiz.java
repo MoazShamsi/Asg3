@@ -15,7 +15,7 @@ import java.util.List;
 public class quiz extends AppCompatActivity {
 
     boolean clicked=false;
-    int i=1;
+    int i=0;
     List<String> ques=new ArrayList<String>();
     List<String> opt=new ArrayList<String>();
     List<String> answers=new ArrayList<String>();
@@ -77,15 +77,26 @@ public class quiz extends AppCompatActivity {
         rg=(RadioGroup) findViewById(R.id.radioGroup);
 
 
-       unknown(0);
+       unknown(i);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(i<5)
                 {
-                    unknown(i);
                     i++;
+                    if(i!=5){
+                    unknown(i);
+                    if(i==4)
+                    {next.setText("END");}
+                    display.setText("");}
+                    else
+                    {
+
+                    }
+
                 }
+
+
             }
 
         });
@@ -95,7 +106,7 @@ public class quiz extends AppCompatActivity {
                 int id=rg.getCheckedRadioButtonId();
                 ans=(RadioButton) findViewById(id);
                 String check=ans.getText().toString();
-                String check1=answers.get(i);
+                String check1=answers.get(i).toString();
                 if(check==check1){
                     display.setText("TRUE ANSWER");
                 }
