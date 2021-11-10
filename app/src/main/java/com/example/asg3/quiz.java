@@ -24,16 +24,39 @@ public class quiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-        ques.add("FROM WHICH PORTION OF MOUTH ل SOUND IS PRODUCED");
-        ques.add("FROM WHICH PORTION OF MOUTH ک SOUND IS PRODUCED");
+        //QUESTIONS
+        ques.add("FROM WHICH PORTION OF MOUTH ل SOUND IS PRODUCED?");
+        ques.add("FROM WHICH PORTION OF MOUTH ک SOUND IS PRODUCED?");
+        ques.add("FROM WHICH PORTION OF MOUTH م SOUND IS PRODUCED?");
+        ques.add("WHICH OF THE FOLLOWING LETTER BELONGS TO HALQIYAH GROUP?");
+        ques.add("WHICH OF THE FOLLOWING LETTER BELONGS TO HALQIYAH GROUP?");
+        ques.add("WHICH OF THE FOLLOWING LETTER BELONGS TO LAHATIYAH GROUP?");
+        //OPTIONS
         opt.add("Rounded tip of the tongue touching the base of the frontal 8 teeth");
         opt.add("Rounded tip of the tongue and some portion near it touching the base of the frontal 4 teeth");
         opt.add("Tongue touching center of mouth roof");
         opt.add("behind the uvula");
+
         opt.add("Rounded tip of the tongue and some portion near it touching the base of the frontal 4 teeth");
         opt.add("Tongue touching center of mouth roof");
         opt.add("Portion of Tongue near its base touching the roof of mouth");
         opt.add("Base of tougue which is near uvula");
+
+        opt.add("Rounded tip of the tongue and some portion near it touching the base of the frontal 4 teeth");
+        opt.add("Outer part of both lips touch each other");
+        opt.add("Portion of Tongue near its base touching the roof of mouth");
+        opt.add("Base of tougue which is near uvula");
+
+        opt.add("ع");
+        opt.add("ل");
+        opt.add("ک");
+        opt.add("م");
+
+        opt.add("ع");
+        opt.add("ل");
+        opt.add("م");
+        opt.add("ک");
+
         qs=(TextView) findViewById(R.id.ques);
         submit=(Button) findViewById(R.id.submitBtn);
 
@@ -43,20 +66,16 @@ public class quiz extends AppCompatActivity {
         op4 =(RadioButton) findViewById(R.id.opt4);
 
 
-        unknown(0);
-        while(i<2){
+       unknown(0);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                unknown(i);
+                i++;
+            }
 
-            submit.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    submit.setText("done");
-                    unknown(i);
-                }
+        });
 
-            });
-        i++;
-
-        }
 
 
     }
@@ -67,5 +86,6 @@ public class quiz extends AppCompatActivity {
         op2.setText(opt.get(1+x*4));
         op3.setText(opt.get(2+x*4));
         op4.setText(opt.get(3+x*4));
+
     }
 }

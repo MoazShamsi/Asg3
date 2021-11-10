@@ -11,7 +11,7 @@
         android:layout_width="345dp"
         android:layout_height="42dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="42dp"
         android:text="@string/nameTv"
         android:textSize="30dp"
@@ -24,7 +24,7 @@
         android:id="@+id/rollno"
         android:layout_width="345dp"
         android:layout_height="38dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/rollno"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="@+id/nameTv"
@@ -60,5 +60,19 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/git"
+        android:layout_width="246dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/git"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/learnBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

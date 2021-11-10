@@ -21,24 +21,29 @@
             android:id="@+id/opt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="25dp"
             android:text="@string/opt1" />
 
         <RadioButton
             android:id="@+id/opt2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="25dp"
             android:text="@string/opt2" />
 
         <RadioButton
             android:id="@+id/opt3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="25dp"
             android:text="@string/opt3" />
+
 
         <RadioButton
             android:id="@+id/opt4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="25dp"
             android:text="@string/opt4" />
     </RadioGroup>
 
@@ -50,6 +55,7 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="13dp"
         android:text="@string/ques"
+        android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

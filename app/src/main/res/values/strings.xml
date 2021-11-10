@@ -17,4 +17,5 @@
     <string name="opt4" />
     <string name="ques" />
     <string name="submit">SUBMIT ANSWER</string>
+    <string name="git">GIT LINK</string>
 </resources>
